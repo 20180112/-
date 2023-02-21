@@ -64,3 +64,8 @@ print('每列的平均值为:')
 print(np.average(b,axis=0))
 print('每列的最大索引为:')
 print(np.argmax(b,axis=0))
+
+#np中矩阵和数组是不同的数据类型
+randmat = np.mat(np.random.rand(4,4))#将数组转为矩阵
+print(randmat)
+print(randmat.I)#矩阵求逆
